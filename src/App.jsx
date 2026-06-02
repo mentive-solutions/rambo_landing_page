@@ -5,6 +5,7 @@ import Features from './components/Features'
 import Diferenciais from './components/Diferenciais'
 import CtaBanner from './components/CtaBanner'
 import Contact from './components/Contact'
+import FloatingWhatsApp from './components/FloatingWhatsApp'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <CtaBanner />
         <Contact />
       </main>
+      <FloatingWhatsApp />
     </div>
   )
 }
