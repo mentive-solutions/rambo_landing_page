@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Features from './components/Features'
 import Diferenciais from './components/Diferenciais'
 import CtaBanner from './components/CtaBanner'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Features />
         <Diferenciais />
         <CtaBanner />
+        <Contact />
       </main>
     </div>
   )
