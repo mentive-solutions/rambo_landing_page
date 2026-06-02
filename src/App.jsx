@@ -6,6 +6,7 @@ import Diferenciais from './components/Diferenciais'
 import CtaBanner from './components/CtaBanner'
 import Contact from './components/Contact'
 import FloatingWhatsApp from './components/FloatingWhatsApp'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <CtaBanner />
         <Contact />
       </main>
+      <Footer />
       <FloatingWhatsApp />
     </div>
   )
