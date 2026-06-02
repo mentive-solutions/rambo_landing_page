@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:portal.ramboerp.com.br)",
+      "Read(//c/Users/bryam/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.7/skills/subagent-driven-development/**)",
+      "PowerShell(cd \"c:\\\\Users\\\\bryam\\\\OneDrive\\\\Documentos\\\\GitHub\\\\rambo-la-page\"; $env:CI = \"true\"; npx create-vite@latest . --template react 2>&1)",
+      "PowerShell($tempDir = \"C:\\\\Users\\\\bryam\\\\AppData\\\\Local\\\\Temp\\\\vite-scaffold-temp\"; if \\(Test-Path $tempDir\\) { Remove-Item $tempDir -Recurse -Force }; New-Item -ItemType Directory -Path $tempDir | Out-Null; Write-Output \"Created temp dir: $tempDir\")",
+      "Read(//c/Users/bryam/AppData/Local/Temp/vite-scaffold-temp/myapp/**)"
+    ]
+  }
+}

@@ -4,8 +4,9 @@ import { WA_URL } from '../constants'
 
 export default function CtaBanner() {
   return (
-    <section className="py-20 px-6">
-      <div className="max-w-4xl mx-auto">
+    <section className="relative z-10 py-20 px-6">
+      <div className="absolute inset-0 bg-navy-deep/80" />
+      <div className="relative max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, scale: 0.97 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -20,7 +21,7 @@ export default function CtaBanner() {
         >
           <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-4">
             Pronto para transformar<br />
-            <span className="gradient-text">sua gestão?</span>
+            <span className="gradient-text-dark">sua gestão?</span>
           </h2>
           <p className="text-text-secondary text-lg mb-8 max-w-xl mx-auto">
             Implementação gratuita. Sem taxa de adesão. Comece hoje.

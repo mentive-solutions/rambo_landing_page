@@ -21,7 +21,7 @@ const CARDS = [
 
 export default function Diferenciais() {
   return (
-    <section className="py-24 px-6">
+    <section className="relative z-10 bg-white py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -30,10 +30,10 @@ export default function Diferenciais() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-navy-deep mb-4">
             Por que escolher o <span className="gradient-text">Rambo?</span>
           </h2>
-          <p className="text-text-secondary text-lg max-w-xl mx-auto">
+          <p className="text-slate-500 text-lg max-w-xl mx-auto">
             Vantagens que fazem a diferença desde o primeiro contato.
           </p>
         </motion.div>
@@ -48,20 +48,19 @@ export default function Diferenciais() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-60px' }}
                 transition={{ duration: 0.6, delay: i * 0.15 }}
-                className="glass-strong rounded-2xl p-8 flex flex-col gap-5 text-center"
-                style={{ boxShadow: '0 0 40px rgba(1,83,167,0.1)' }}
+                className="card-light rounded-2xl p-8 flex flex-col gap-5 text-center"
               >
                 <div
                   className="w-16 h-16 rounded-2xl mx-auto flex items-center justify-center"
                   style={{
                     background: 'linear-gradient(135deg, #0153A7, #7BCFF3)',
-                    boxShadow: '0 0 20px rgba(123,207,243,0.3)',
+                    boxShadow: '0 0 20px rgba(123,207,243,0.25)',
                   }}
                 >
                   <Icon size={32} color="white" />
                 </div>
-                <h3 className="text-text-primary font-bold text-xl">{card.title}</h3>
-                <p className="text-text-secondary leading-relaxed">{card.desc}</p>
+                <h3 className="text-navy-deep font-bold text-xl">{card.title}</h3>
+                <p className="text-slate-500 leading-relaxed">{card.desc}</p>
               </motion.div>
             )
           })}

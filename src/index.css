@@ -16,17 +16,24 @@
 }
 
 @layer components {
+  /* Dark glassmorphism — for sections over the portal background */
   .glass {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(4, 29, 51, 0.70);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(123, 207, 243, 0.15);
+    border: 1px solid rgba(123, 207, 243, 0.20);
   }
   .glass-strong {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(4, 29, 51, 0.85);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(123, 207, 243, 0.25);
+    border: 1px solid rgba(123, 207, 243, 0.30);
+  }
+  /* Light card — for white-background sections */
+  .card-light {
+    background: white;
+    border: 1px solid rgba(1, 83, 167, 0.10);
+    box-shadow: 0 4px 24px rgba(4, 29, 51, 0.08);
   }
   .btn-primary {
     background: linear-gradient(135deg, #0153A7, #7BCFF3);
@@ -39,7 +46,15 @@
 }
 
 @layer utilities {
+  /* Blue-to-cyan gradient — legible on both dark and white backgrounds */
   .gradient-text {
+    background: linear-gradient(135deg, #0153A7, #7BCFF3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  /* White-to-cyan gradient — for dark-section headings needing high contrast */
+  .gradient-text-dark {
     background: linear-gradient(135deg, #E8ECF5, #7BCFF3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

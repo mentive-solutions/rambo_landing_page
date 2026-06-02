@@ -52,8 +52,9 @@ export default function Features() {
   const titleInView = useInView(titleRef, { once: true })
 
   return (
-    <section id="features" className="py-24 px-6">
-      <div className="max-w-7xl mx-auto">
+    <section id="features" className="relative z-10 py-24 px-6">
+      <div className="absolute inset-0 bg-navy-deep/80" />
+      <div className="relative max-w-7xl mx-auto">
         <motion.div
           ref={titleRef}
           initial={{ opacity: 0, y: 20 }}
@@ -63,7 +64,7 @@ export default function Features() {
         >
           <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-4">
             Tudo que sua empresa precisa,{' '}
-            <span className="gradient-text">em um só lugar</span>
+            <span className="gradient-text-dark">em um só lugar</span>
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto">
             Módulos completos para cada área do seu negócio, integrados e prontos para usar no dia 1.
