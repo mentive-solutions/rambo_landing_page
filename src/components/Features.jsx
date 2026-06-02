@@ -53,7 +53,7 @@ export default function Features() {
 
   return (
     <section id="features" className="relative z-10 py-24 px-6">
-      <div className="absolute inset-0 bg-navy-deep/80" />
+      <div className="absolute inset-0 bg-navy-deep/55" />
       <div className="relative max-w-7xl mx-auto">
         <motion.div
           ref={titleRef}

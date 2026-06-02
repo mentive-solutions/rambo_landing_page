@@ -5,7 +5,7 @@ import { WA_URL } from '../constants'
 export default function CtaBanner() {
   return (
     <section className="relative z-10 py-20 px-6">
-      <div className="absolute inset-0 bg-navy-deep/80" />
+      <div className="absolute inset-0 bg-navy-deep/50" />
       <div className="relative max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, scale: 0.97 }}
