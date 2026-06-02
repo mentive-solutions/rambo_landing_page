@@ -11,6 +11,7 @@ export default {
           dark: '#011B72',
         },
         primary: '#0153A7',
+        // Intentionally overrides Tailwind's built-in cyan scale — brand accent color
         cyan: '#7BCFF3',
         'text-primary':   '#E8ECF5',
         'text-secondary': '#9FB3DB',
