@@ -25,17 +25,6 @@ export default function Background() {
           animation: 'glowPulse 10s ease-in-out infinite reverse',
         }}
       />
-      <style>{`
-        @keyframes gradientShift {
-          0%   { background-position: 0% 50%; }
-          50%  { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
-        }
-        @keyframes glowPulse {
-          0%, 100% { transform: scale(1); }
-          50%       { transform: scale(1.25); }
-        }
-      `}</style>
     </div>
   )
 }

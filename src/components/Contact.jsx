@@ -2,8 +2,7 @@ import { useState, useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 import { Send, MessageCircle, CheckCircle, AlertCircle } from 'lucide-react'
-
-const WA_URL = 'https://wa.me/5546999167623?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Rambo%20ERP%20e%20gostaria%20de%20saber%20mais.'
+import { WA_URL } from '../constants'
 
 const EMPTY = { name: '', company: '', segment: '', phone: '' }
 
@@ -12,11 +11,15 @@ const inputClass =
   'border border-cyan/10 focus:border-cyan/40 focus:outline-none focus:ring-1 focus:ring-cyan/20 ' +
   'transition-colors duration-200 bg-transparent text-sm'
 
-function Field({ label, name, value, onChange, placeholder }) {
+function Field({ label, name, value, onChange, placeholder, type = 'text' }) {
   return (
     <div>
-      <label className="text-text-secondary text-xs font-medium block mb-1.5">{label} *</label>
+      <label htmlFor={name} className="text-text-secondary text-xs font-medium block mb-1.5">
+        {label} *
+      </label>
       <input
+        id={name}
+        type={type}
         name={name}
         value={value}
         onChange={onChange}
@@ -87,6 +90,7 @@ export default function Contact() {
                 <p className="text-text-primary font-semibold text-lg">Mensagem enviada!</p>
                 <p className="text-text-secondary">Entraremos em contato em breve.</p>
                 <button
+                  type="button"
                   onClick={() => setStatus('idle')}
                   className="text-cyan text-sm hover:underline mt-2"
                 >
@@ -98,7 +102,7 @@ export default function Contact() {
                 <Field label="Nome completo"               name="name"    value={form.name}    onChange={handleChange} placeholder="João da Silva" />
                 <Field label="Nome da empresa"             name="company" value={form.company} onChange={handleChange} placeholder="Empresa Ltda." />
                 <Field label="Segmento / tipo de negócio"  name="segment" value={form.segment} onChange={handleChange} placeholder="Ex: Mecânica, Loja de Roupas, Mercado..." />
-                <Field label="Telefone / WhatsApp"         name="phone"   value={form.phone}   onChange={handleChange} placeholder="(00) 00000-0000" />
+                <Field label="Telefone / WhatsApp" name="phone" type="tel" value={form.phone} onChange={handleChange} placeholder="(00) 00000-0000" />
 
                 {status === 'error' && (
                   <div className="flex items-center gap-2 text-red-400 text-sm">

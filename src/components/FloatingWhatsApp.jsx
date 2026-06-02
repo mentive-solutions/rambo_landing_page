@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 import { MessageCircle } from 'lucide-react'
-
-const WA_URL = 'https://wa.me/5546999167623?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Rambo%20ERP%20e%20gostaria%20de%20saber%20mais.'
+import { WA_URL } from '../constants'
 
 export default function FloatingWhatsApp() {
   return (
@@ -9,7 +8,7 @@ export default function FloatingWhatsApp() {
       href={WA_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 group"
+      className="fixed bottom-6 right-6 z-50 group w-14 h-14"
       aria-label="Fale Conosco pelo WhatsApp"
     >
       <motion.div
