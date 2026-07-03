@@ -20,10 +20,9 @@ export default function CtaBanner() {
           }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-4">
-            Pronto para transformar<br />
-            <span className="gradient-text-dark">sua gestão?</span>
+            Pronto para transformar sua gestão?<br />
           </h2>
-          <p className="text-text-secondary text-lg mb-8 max-w-xl mx-auto">
+          <p className="text-text-primary text-xl mb-8 max-w-xl mx-auto">
             Implementação gratuita. Sem taxa de adesão. Comece hoje.
           </p>
           <a

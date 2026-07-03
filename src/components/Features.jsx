@@ -7,12 +7,12 @@ import {
 
 const FEATURES = [
   { icon: Package,       title: 'Controle de Estoque',      desc: 'Entradas, saídas e inventário em tempo real com alertas de reposição.' },
-  { icon: Receipt,       title: 'Emissão de Nota Fiscal',   desc: 'NF-e integrada direto no sistema, sem ferramentas externas.' },
+  { icon: Receipt,       title: 'Emissão de Nota Fiscal',   desc: 'NF-e e NFC-e integrada direto no sistema, sem ferramentas externas.' },
   { icon: Monitor,       title: 'PDV / Frente de Caixa',    desc: 'Vendas rápidas e controle total do ponto de venda.' },
   { icon: BarChart2,     title: 'Relatórios Gerenciais',    desc: 'Dados em tempo real para decisões estratégicas e planejamento.' },
   { icon: DollarSign,    title: 'Controle Financeiro',      desc: 'Fluxo de caixa, contas a pagar e receber em um painel único.' },
   { icon: Users,         title: 'Gestão de Clientes',       desc: 'Histórico completo de compras e ferramentas de fidelização.' },
-  { icon: UserCheck,     title: 'Controle de Funcionários', desc: 'Ponto eletrônico, metas e acompanhamento de performance.' },
+  { icon: UserCheck,     title: 'Controle de Funcionários', desc: 'Metas e acompanhamento de performance.' },
   { icon: Star,          title: 'Sistema de Gratificação',  desc: 'Incentive sua equipe com métricas e bônus automatizados.' },
   { icon: FileText,      title: 'Emissão de Orçamentos',    desc: 'Gere propostas profissionais em segundos e converta mais vendas.' },
   { icon: ClipboardList, title: 'Ordens de Serviço',        desc: 'Acompanhe cada serviço do início ao fim com histórico detalhado.' },
@@ -34,14 +34,14 @@ function FeatureCard({ feature, index }) {
       className="glass rounded-2xl p-6 flex flex-col gap-4 cursor-default"
     >
       <div
-        className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
+        className="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0"
         style={{ background: 'linear-gradient(135deg, #0153A7, #7BCFF3)' }}
       >
-        <Icon size={22} color="white" />
+        <Icon size={28} color="white" />
       </div>
       <div>
-        <h3 className="text-text-primary font-semibold text-base mb-1">{feature.title}</h3>
-        <p className="text-text-secondary text-sm leading-relaxed">{feature.desc}</p>
+        <h3 className="text-text-primary font-semibold text-xl mb-1">{feature.title}</h3>
+        <p className="text-text-secondary text-m leading-relaxed">{feature.desc}</p>
       </div>
     </motion.div>
   )
@@ -63,11 +63,10 @@ export default function Features() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-4">
-            Tudo que sua empresa precisa,{' '}
-            <span className="gradient-text-dark">em um só lugar</span>
+            Tudo que sua empresa precisa, em um só lugar
           </h2>
-          <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-            Módulos completos para cada área do seu negócio, integrados e prontos para usar no dia 1.
+          <p className="text-text-primary text-xl max-w-2xl mx-auto">
+            Módulos completos para cada área do seu negócio, integrados e prontos para usar no 1º dia.
           </p>
         </motion.div>
 

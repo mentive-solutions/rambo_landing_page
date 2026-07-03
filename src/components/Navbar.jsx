@@ -23,10 +23,10 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <a href="/" className="flex items-center gap-3">
-          <img src="/rambo_logo.svg" alt="Rambo" className="h-10 w-auto" />
+          <img src="/rambo_logo.svg" alt="Rambo" className="h-14 w-auto" />
           <div className="leading-tight">
-            <p className="text-text-primary font-bold text-sm tracking-widest uppercase">Rambo</p>
-            <p className="text-text-secondary text-xs tracking-wider">Gestão Empresarial</p>
+            <p className="text-text-primary font-bold text-x tracking-widest uppercase">Rambo</p>
+            <p className="text-text-primary text-s tracking-wider">Gestão Empresarial</p>
           </div>
         </a>
 
@@ -35,7 +35,7 @@ export default function Navbar() {
             href="https://portal.ramboerp.com.br"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:block text-text-secondary hover:text-cyan text-sm font-medium transition-colors duration-200"
+            className="hidden sm:block text-text-primary hover:text-cyan text-m font-medium transition-colors duration-200"
           >
             Acessar o Sistema
           </a>
@@ -45,7 +45,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 btn-primary text-white text-sm font-semibold px-4 py-2 rounded-lg"
           >
-            <MessageCircle size={16} />
+            <MessageCircle size={24} />
             <span className="hidden sm:inline">WhatsApp</span>
           </a>
         </div>

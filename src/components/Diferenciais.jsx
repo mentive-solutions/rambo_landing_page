@@ -4,8 +4,8 @@ import { Zap, Gift, Layers } from 'lucide-react'
 const CARDS = [
   {
     icon: Zap,
-    title: 'Implementação no Mesmo Dia',
-    desc: 'Entre em contato hoje e comece a usar o sistema ainda hoje. Nossa equipe realiza a implementação completa em horas.',
+    title: 'Implementação Rápida',
+    desc: 'Entre em contato hoje pois o processo é totalmente remoto. Nossa equipe realiza a implementação completa e você não precisa sair de casa.',
   },
   {
     icon: Gift,
@@ -33,7 +33,7 @@ export default function Diferenciais() {
           <h2 className="text-3xl md:text-4xl font-bold text-navy-deep mb-4">
             Por que escolher o <span className="gradient-text">Rambo?</span>
           </h2>
-          <p className="text-slate-500 text-lg max-w-xl mx-auto">
+          <p className="text-slate-500 text-xl max-w-xl mx-auto">
             Vantagens que fazem a diferença desde o primeiro contato.
           </p>
         </motion.div>

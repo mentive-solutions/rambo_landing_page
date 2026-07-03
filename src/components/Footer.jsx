@@ -59,7 +59,7 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto mt-10 pt-6 border-t border-cyan/5">
         <p className="text-text-secondary text-xs text-center">
-          © 2026 Rambo Sistemas de Gestão. Todos os direitos reservados.
+          ©2026 Mentive Soluções em Tecnologia . Todos os direitos reservados.
         </p>
       </div>
     </footer>

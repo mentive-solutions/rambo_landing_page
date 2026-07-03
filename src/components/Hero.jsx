@@ -14,7 +14,7 @@ const item = {
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative z-10 bg-white min-h-screen flex items-center pt-20 pb-12 px-6">
+    <section id="hero" className="relative z-10 bg-white min-h-[88vh] flex items-center pt-20 pb-12 px-6">
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
         {/* Monitor — LEFT on desktop, below text on mobile */}
@@ -31,12 +31,19 @@ export default function Hero() {
           >
             <div
               className="absolute inset-0 rounded-full blur-3xl"
-              style={{ background: 'radial-gradient(circle, #7BCFF3, #0153A7)', opacity: 0.12 }}
+              style={{ background: 'radial-gradient(circle, #5e5e5e, #0153A7)', opacity: 0.12 }}
             />
             <img
               src="/mock.png"
               alt="Rambo ERP Dashboard"
               className="relative w-full max-w-xl xl:max-w-2xl drop-shadow-2xl"
+            />
+            <div
+              className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-3/4 h-6 rounded-full"
+              style={{
+                background: 'radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 70%)',
+                filter: 'blur(8px)',
+              }}
             />
           </motion.div>
         </motion.div>
@@ -49,7 +56,7 @@ export default function Hero() {
           className="order-1 lg:order-2 flex flex-col gap-6"
         >
           <motion.div variants={item}>
-            <span className="inline-block bg-primary/10 text-primary text-xs font-semibold px-4 py-2 rounded-full tracking-widest uppercase border border-primary/20">
+            <span className="inline-block bg-primary/10 text-primary text-s font-semibold px-4 py-2 rounded-full tracking-widest uppercase border border-primary/20">
               ERP Completo para Qualquer Negócio
             </span>
           </motion.div>
@@ -64,8 +71,8 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p variants={item} className="text-slate-600 text-lg leading-relaxed max-w-xl">
-            Do estoque ao financeiro, das ordens de serviço aos seus funcionários — tudo em um único sistema.{' '}
-            <span className="text-primary font-semibold">Implementação gratuita no mesmo dia.</span>
+            Do estoque ao financeiro, das ordens de serviço aos seus funcionários, tudo em um único sistema.{' '}
+            <span className="text-primary font-semibold">Implementação gratuita.</span>
           </motion.p>
 
           <motion.div variants={item} className="flex flex-wrap gap-4 pt-2">

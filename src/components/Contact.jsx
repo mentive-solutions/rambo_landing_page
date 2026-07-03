@@ -14,7 +14,7 @@ const inputClass =
 function Field({ label, name, value, onChange, placeholder, type = 'text' }) {
   return (
     <div>
-      <label htmlFor={name} className="text-slate-600 text-xs font-medium block mb-1.5">
+      <label htmlFor={name} className="text-slate-600 text-m font-medium block mb-1.5">
         {label} *
       </label>
       <input
@@ -68,9 +68,9 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-navy-deep mb-4">
-            Entre em <span className="gradient-text">contato</span>
+            Entre em Contato
           </h2>
-          <p className="text-slate-500 text-lg">
+          <p className="text-slate-500 text-xl">
             Nossa equipe retorna em minutos. Implementamos no mesmo dia.
           </p>
         </motion.div>
